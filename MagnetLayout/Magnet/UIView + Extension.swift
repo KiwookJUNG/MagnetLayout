@@ -11,10 +11,10 @@ import UIKit
 extension UIView {
 
     enum Direction {
-         case top(UIView, NSLayoutConstraint.Attribute ,CGFloat = 0)
-         case left(UIView, NSLayoutConstraint.Attribute ,CGFloat = 0)
-         case right(UIView, NSLayoutConstraint.Attribute ,CGFloat = 0)
-         case bottom(UIView, NSLayoutConstraint.Attribute ,CGFloat = 0)
+         case top(to: UIView, NSLayoutConstraint.Attribute ,CGFloat = 0)
+         case left(to: UIView, NSLayoutConstraint.Attribute ,CGFloat = 0)
+         case right(to: UIView, NSLayoutConstraint.Attribute ,CGFloat = 0)
+         case bottom(to: UIView, NSLayoutConstraint.Attribute ,CGFloat = 0)
          case width(CGFloat, UIView? = nil)
          case height(CGFloat, UIView? = nil)
         
@@ -24,16 +24,22 @@ extension UIView {
         static func + (lhs: Direction, rhs: CGFloat) -> Direction {
             
             switch lhs {
+                
             case .safeArea(let direction, let constant):
                 return .safeArea(direction, constant + rhs)
+                
             case .top(let view, let direction, let constant):
-                return .top(view, direction, constant + rhs)
+                return .top(to: view, direction, constant + rhs)
+                
             case .left(let view, let direction, let constant):
-                return .left(view, direction, constant + rhs)
+                return .left(to: view, direction, constant + rhs)
+                
             case .right(let view, let direction, let constant):
-                return .right(view, direction, constant + rhs)
+                return .right(to: view, direction, constant + rhs)
+                
             case .bottom(let view, let direction, let constant):
-                return .bottom(view, direction, constant + rhs)
+                return .bottom(to: view, direction, constant + rhs)
+                
             default:
                 return lhs
             }
@@ -42,7 +48,7 @@ extension UIView {
         
      }
     
-    func magnet(to : Direction...) {
+    func magnet(_ to : Direction...) {
         translatesAutoresizingMaskIntoConstraints = false
         
         var constraintsArray = [NSLayoutConstraint]()
@@ -115,9 +121,6 @@ extension UIView {
         
         NSLayoutConstraint.activate(constraintsArray)
     }
-    
-    
-    
-   
+
 }
 

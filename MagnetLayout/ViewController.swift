@@ -37,20 +37,20 @@ class ViewController: UIViewController {
         
         
         
-        redView.magnet(to: .safeArea(.top) + 100,
-                           .safeArea(.left) + 50,
-                           .width(50),
-                           .height(200))
+        redView.magnet(.safeArea(.top) + 100,
+                       .safeArea(.left) + 50,
+                       .width(50),
+                       .height(200))
         
-        blueView.magnet(to: .top(redView, .top),
-                            .left(redView, .right) + 50,
-                            .width(100),
-                            .height(200))
+        blueView.magnet(.top(to: redView, .top),
+                        .left(to: redView, .right) + 50,
+                        .width(100),
+                        .height(200))
         
-        greenView.magnet(to: .top(blueView, .bottom) + 50,
-                             .left(redView, .left),
-                             .width(150),
-                             .height(100))
+        greenView.magnet(.top(to: blueView, .bottom) + 50,
+                         .left(to: redView, .left),
+                         .width(150),
+                         .height(100))
         
     }
 }
