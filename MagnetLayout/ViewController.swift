@@ -29,6 +29,12 @@ class ViewController: UIViewController {
          return view
     }()
     
+    var pinkView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        return view
+    }()
+    
     var textLabel: UILabel = {
         let lbl = UILabel()
         lbl.text = "ddddddddddddddddd"
@@ -37,15 +43,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.addSubview(pinkView)
         self.view.addSubview(redView)
         self.view.addSubview(blueView)
         self.view.addSubview(greenView)
         self.view.addSubview(textLabel)
         
+        pinkView.magnet(.fillSuper())
         
-        
-        redView.magnet(.safeArea(.top),
-                       .safeArea(.left) + 50,
+        redView.magnet(.safeArea(.top) + 100,
+                       .safeArea(.left) + 100,
                        .width(50),
                        .height(200))
         
@@ -61,9 +68,7 @@ class ViewController: UIViewController {
         
         textLabel.magnet(.top(to: greenView, .bottom) + 100,
                          .safeArea(.right) + (-100))
-        
     
-        
     }
 }
 
