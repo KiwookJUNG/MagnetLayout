@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0713BA123CEC30600F62031 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0713BA023CEC30600F62031 /* AppDelegate.swift */; };
+		A0713BA323CEC30600F62031 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0713BA223CEC30600F62031 /* SceneDelegate.swift */; };
+		A0713BA523CEC30600F62031 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0713BA423CEC30600F62031 /* ViewController.swift */; };
+		A0713BA823CEC30600F62031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0713BA623CEC30600F62031 /* Main.storyboard */; };
+		A0713BAA23CEC30A00F62031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0713BA923CEC30A00F62031 /* Assets.xcassets */; };
+		A0713BAD23CEC30A00F62031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0713BAB23CEC30A00F62031 /* LaunchScreen.storyboard */; };
+		A0713BB823CEC30B00F62031 /* MagnetLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0713BB723CEC30B00F62031 /* MagnetLayoutTests.swift */; };
+		A0713BC323CEC30B00F62031 /* MagnetLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0713BC223CEC30B00F62031 /* MagnetLayoutUITests.swift */; };
+		A0713BD223CEC32B00F62031 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0713BD123CEC32B00F62031 /* UIView + Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0713BB423CEC30B00F62031 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0713B9523CEC30600F62031 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0713B9C23CEC30600F62031;
+			remoteInfo = MagnetLayout;
+		};
+		A0713BBF23CEC30B00F62031 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0713B9523CEC30600F62031 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0713B9C23CEC30600F62031;
+			remoteInfo = MagnetLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0713B9D23CEC30600F62031 /* MagnetLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnetLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0713BA023CEC30600F62031 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0713BA223CEC30600F62031 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A0713BA423CEC30600F62031 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0713BA723CEC30600F62031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0713BA923CEC30A00F62031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0713BAC23CEC30A00F62031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0713BAE23CEC30A00F62031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0713BB323CEC30B00F62031 /* MagnetLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0713BB723CEC30B00F62031 /* MagnetLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetLayoutTests.swift; sourceTree = "<group>"; };
+		A0713BB923CEC30B00F62031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0713BBE23CEC30B00F62031 /* MagnetLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0713BC223CEC30B00F62031 /* MagnetLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetLayoutUITests.swift; sourceTree = "<group>"; };
+		A0713BC423CEC30B00F62031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0713BD123CEC32B00F62031 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0713B9A23CEC30600F62031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0713BB023CEC30B00F62031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0713BBB23CEC30B00F62031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0713B9423CEC30600F62031 = {
+			isa = PBXGroup;
+			children = (
+				A0713B9F23CEC30600F62031 /* MagnetLayout */,
+				A0713BB623CEC30B00F62031 /* MagnetLayoutTests */,
+				A0713BC123CEC30B00F62031 /* MagnetLayoutUITests */,
+				A0713B9E23CEC30600F62031 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0713B9E23CEC30600F62031 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0713B9D23CEC30600F62031 /* MagnetLayout.app */,
+				A0713BB323CEC30B00F62031 /* MagnetLayoutTests.xctest */,
+				A0713BBE23CEC30B00F62031 /* MagnetLayoutUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0713B9F23CEC30600F62031 /* MagnetLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A0713BD023CEC31C00F62031 /* Magnet */,
+				A0713BA023CEC30600F62031 /* AppDelegate.swift */,
+				A0713BA223CEC30600F62031 /* SceneDelegate.swift */,
+				A0713BA423CEC30600F62031 /* ViewController.swift */,
+				A0713BA623CEC30600F62031 /* Main.storyboard */,
+				A0713BA923CEC30A00F62031 /* Assets.xcassets */,
+				A0713BAB23CEC30A00F62031 /* LaunchScreen.storyboard */,
+				A0713BAE23CEC30A00F62031 /* Info.plist */,
+			);
+			path = MagnetLayout;
+			sourceTree = "<group>";
+		};
+		A0713BB623CEC30B00F62031 /* MagnetLayoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0713BB723CEC30B00F62031 /* MagnetLayoutTests.swift */,
+				A0713BB923CEC30B00F62031 /* Info.plist */,
+			);
+			path = MagnetLayoutTests;
+			sourceTree = "<group>";
+		};
+		A0713BC123CEC30B00F62031 /* MagnetLayoutUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0713BC223CEC30B00F62031 /* MagnetLayoutUITests.swift */,
+				A0713BC423CEC30B00F62031 /* Info.plist */,
+			);
+			path = MagnetLayoutUITests;
+			sourceTree = "<group>";
+		};
+		A0713BD023CEC31C00F62031 /* Magnet */ = {
+			isa = PBXGroup;
+			children = (
+				A0713BD123CEC32B00F62031 /* UIView + Extension.swift */,
+			);
+			path = Magnet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0713B9C23CEC30600F62031 /* MagnetLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0713BC723CEC30B00F62031 /* Build configuration list for PBXNativeTarget "MagnetLayout" */;
+			buildPhases = (
+				A0713B9923CEC30600F62031 /* Sources */,
+				A0713B9A23CEC30600F62031 /* Frameworks */,
+				A0713B9B23CEC30600F62031 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagnetLayout;
+			productName = MagnetLayout;
+			productReference = A0713B9D23CEC30600F62031 /* MagnetLayout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0713BB223CEC30B00F62031 /* MagnetLayoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0713BCA23CEC30B00F62031 /* Build configuration list for PBXNativeTarget "MagnetLayoutTests" */;
+			buildPhases = (
+				A0713BAF23CEC30B00F62031 /* Sources */,
+				A0713BB023CEC30B00F62031 /* Frameworks */,
+				A0713BB123CEC30B00F62031 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0713BB523CEC30B00F62031 /* PBXTargetDependency */,
+			);
+			name = MagnetLayoutTests;
+			productName = MagnetLayoutTests;
+			productReference = A0713BB323CEC30B00F62031 /* MagnetLayoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0713BBD23CEC30B00F62031 /* MagnetLayoutUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0713BCD23CEC30B00F62031 /* Build configuration list for PBXNativeTarget "MagnetLayoutUITests" */;
+			buildPhases = (
+				A0713BBA23CEC30B00F62031 /* Sources */,
+				A0713BBB23CEC30B00F62031 /* Frameworks */,
+				A0713BBC23CEC30B00F62031 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0713BC023CEC30B00F62031 /* PBXTargetDependency */,
+			);
+			name = MagnetLayoutUITests;
+			productName = MagnetLayoutUITests;
+			productReference = A0713BBE23CEC30B00F62031 /* MagnetLayoutUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0713B9523CEC30600F62031 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = kiwook;
+				TargetAttributes = {
+					A0713B9C23CEC30600F62031 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					A0713BB223CEC30B00F62031 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = A0713B9C23CEC30600F62031;
+					};
+					A0713BBD23CEC30B00F62031 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = A0713B9C23CEC30600F62031;
+					};
+				};
+			};
+			buildConfigurationList = A0713B9823CEC30600F62031 /* Build configuration list for PBXProject "MagnetLayout" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0713B9423CEC30600F62031;
+			productRefGroup = A0713B9E23CEC30600F62031 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0713B9C23CEC30600F62031 /* MagnetLayout */,
+				A0713BB223CEC30B00F62031 /* MagnetLayoutTests */,
+				A0713BBD23CEC30B00F62031 /* MagnetLayoutUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0713B9B23CEC30600F62031 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0713BAD23CEC30A00F62031 /* LaunchScreen.storyboard in Resources */,
+				A0713BAA23CEC30A00F62031 /* Assets.xcassets in Resources */,
+				A0713BA823CEC30600F62031 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0713BB123CEC30B00F62031 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0713BBC23CEC30B00F62031 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0713B9923CEC30600F62031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0713BD223CEC32B00F62031 /* UIView + Extension.swift in Sources */,
+				A0713BA523CEC30600F62031 /* ViewController.swift in Sources */,
+				A0713BA123CEC30600F62031 /* AppDelegate.swift in Sources */,
+				A0713BA323CEC30600F62031 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0713BAF23CEC30B00F62031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0713BB823CEC30B00F62031 /* MagnetLayoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0713BBA23CEC30B00F62031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0713BC323CEC30B00F62031 /* MagnetLayoutUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0713BB523CEC30B00F62031 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0713B9C23CEC30600F62031 /* MagnetLayout */;
+			targetProxy = A0713BB423CEC30B00F62031 /* PBXContainerItemProxy */;
+		};
+		A0713BC023CEC30B00F62031 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0713B9C23CEC30600F62031 /* MagnetLayout */;
+			targetProxy = A0713BBF23CEC30B00F62031 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0713BA623CEC30600F62031 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0713BA723CEC30600F62031 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0713BAB23CEC30A00F62031 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0713BAC23CEC30A00F62031 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0713BC523CEC30B00F62031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0713BC623CEC30B00F62031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0713BC823CEC30B00F62031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZ26D79YNZ;
+				INFOPLIST_FILE = MagnetLayout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kiwook.MagnetLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0713BC923CEC30B00F62031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZ26D79YNZ;
+				INFOPLIST_FILE = MagnetLayout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kiwook.MagnetLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0713BCB23CEC30B00F62031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZ26D79YNZ;
+				INFOPLIST_FILE = MagnetLayoutTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kiwook.MagnetLayoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagnetLayout.app/MagnetLayout";
+			};
+			name = Debug;
+		};
+		A0713BCC23CEC30B00F62031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZ26D79YNZ;
+				INFOPLIST_FILE = MagnetLayoutTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kiwook.MagnetLayoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagnetLayout.app/MagnetLayout";
+			};
+			name = Release;
+		};
+		A0713BCE23CEC30B00F62031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZ26D79YNZ;
+				INFOPLIST_FILE = MagnetLayoutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kiwook.MagnetLayoutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagnetLayout;
+			};
+			name = Debug;
+		};
+		A0713BCF23CEC30B00F62031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HZ26D79YNZ;
+				INFOPLIST_FILE = MagnetLayoutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kiwook.MagnetLayoutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagnetLayout;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0713B9823CEC30600F62031 /* Build configuration list for PBXProject "MagnetLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0713BC523CEC30B00F62031 /* Debug */,
+				A0713BC623CEC30B00F62031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0713BC723CEC30B00F62031 /* Build configuration list for PBXNativeTarget "MagnetLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0713BC823CEC30B00F62031 /* Debug */,
+				A0713BC923CEC30B00F62031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0713BCA23CEC30B00F62031 /* Build configuration list for PBXNativeTarget "MagnetLayoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0713BCB23CEC30B00F62031 /* Debug */,
+				A0713BCC23CEC30B00F62031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0713BCD23CEC30B00F62031 /* Build configuration list for PBXNativeTarget "MagnetLayoutUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0713BCE23CEC30B00F62031 /* Debug */,
+				A0713BCF23CEC30B00F62031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0713B9523CEC30600F62031 /* Project object */;
+}
