@@ -9,61 +9,41 @@
 import UIKit
 
 extension UIView {
-    enum Direction2 {
-        case top(NSLayoutYAxisAnchor, CGFloat)
-        case left(NSLayoutXAxisAnchor, CGFloat)
-        case right(NSLayoutXAxisAnchor, CGFloat)
-        case bottom(NSLayoutYAxisAnchor, CGFloat)
-        case width(NSLayoutDimension?, CGFloat)
-        case height(NSLayoutDimension?, CGFloat)
-    }
-   
-//    func anchor(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, trailing: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
-   func magnet2(direction : [Direction2]) {
-       translatesAutoresizingMaskIntoConstraints = false
-       for i in direction {
-           switch i {
-           case .top(let anchor, let constant):
-               topAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
-           case .left(let anchor, let constant):
-               leadingAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
-           case .right(let anchor, let constant):
-               trailingAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
-           case .bottom(let anchor, let constant):
-               bottomAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
-            
-           case .height(let anchor, let constant):
-               if anchor == nil {
-                   widthAnchor.constraint(equalToConstant: constant).isActive = true
-               } else {
-                   widthAnchor.constraint(equalTo: anchor!, multiplier: 1.0, constant: constant).isActive = true
-               }
-           case .width(let anchor, let constant):
-               if anchor == nil {
-                   heightAnchor.constraint(equalToConstant: constant).isActive = true
-               } else {
-                   heightAnchor.constraint(equalTo: anchor!, multiplier: 1.0, constant: constant).isActive = true
-               }
-           }
-       }
-   }
-    
-    
+
     enum Direction {
-         case top(UIView, NSLayoutConstraint.Attribute ,CGFloat)
-         case left(UIView, NSLayoutConstraint.Attribute ,CGFloat)
-         case right(UIView, NSLayoutConstraint.Attribute ,CGFloat)
-         case bottom(UIView, NSLayoutConstraint.Attribute , CGFloat)
-         case width(UIView?, CGFloat)
-         case height(UIView?, CGFloat)
+         case top(UIView, NSLayoutConstraint.Attribute ,CGFloat = 0)
+         case left(UIView, NSLayoutConstraint.Attribute ,CGFloat = 0)
+         case right(UIView, NSLayoutConstraint.Attribute ,CGFloat = 0)
+         case bottom(UIView, NSLayoutConstraint.Attribute ,CGFloat = 0)
+         case width(CGFloat, UIView? = nil)
+         case height(CGFloat, UIView? = nil)
+        
+        
+        static func + (lhs: Direction, rhs: CGFloat) -> Direction {
+            
+            switch lhs {
+            case .top(let view, let direction, let constant):
+                return .top(view, direction, constant + rhs)
+            case .left(let view, let direction, let constant):
+                return .left(view, direction, constant + rhs)
+            case .right(let view, let direction, let constant):
+                return .right(view, direction, constant + rhs)
+            case .bottom(let view, let direction, let constant):
+                return .bottom(view, direction, constant + rhs)
+            default:
+                return lhs
+            }
+        }
+        
+        
      }
     
-    func magnet(direction : Direction...) {
+    func magnet(to : Direction...) {
         translatesAutoresizingMaskIntoConstraints = false
         
         var constraintsArray = [NSLayoutConstraint]()
-        for i in direction {
-            switch i {
+        for direction in to {
+            switch direction {
             case .top(let view, let direction, let constant):
                 let top = NSLayoutConstraint(item:       self,
                                              attribute:  .top,
@@ -104,13 +84,13 @@ extension UIView {
                                              constant:   constant)
                 constraintsArray.append(bottom)
 
-            case .width(let view, let constant):
+            case .width(let constant, let view):
                if view == nil {
                     widthAnchor.constraint(equalToConstant: constant).isActive = true
                 } else {
                     widthAnchor.constraint(equalTo: view!.widthAnchor, multiplier: 1.0, constant: constant).isActive = true
                 }
-            case .height(let view, let constant):
+            case .height(let constant, let view):
                 if view == nil {
                      heightAnchor.constraint(equalToConstant: constant).isActive = true
                  } else {
@@ -121,4 +101,9 @@ extension UIView {
         
         NSLayoutConstraint.activate(constraintsArray)
     }
+    
+    
+    
+   
 }
+
