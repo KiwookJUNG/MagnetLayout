@@ -18,10 +18,14 @@ extension UIView {
          case width(CGFloat, UIView? = nil)
          case height(CGFloat, UIView? = nil)
         
+         case safeArea(NSLayoutConstraint.Attribute ,CGFloat = 0 )
+        
         
         static func + (lhs: Direction, rhs: CGFloat) -> Direction {
             
             switch lhs {
+            case .safeArea(let direction, let constant):
+                return .safeArea(direction, constant + rhs)
             case .top(let view, let direction, let constant):
                 return .top(view, direction, constant + rhs)
             case .left(let view, let direction, let constant):
@@ -53,6 +57,16 @@ extension UIView {
                                              multiplier: 1.0,
                                              constant:   constant)
                 constraintsArray.append(top)
+                
+            case .safeArea(let direction, let constant):
+                let safeArea = NSLayoutConstraint(item: self,
+                                                     attribute: direction,
+                                                     relatedBy: .equal,
+                                                     toItem: self.superview?.safeAreaLayoutGuide,
+                                                     attribute: direction,
+                                                     multiplier: 1.0,
+                                                     constant: constant)
+                constraintsArray.append(safeArea)
                 
             case .left(let view, let direction, let constant):
                 let left = NSLayoutConstraint(item:       self,

@@ -37,8 +37,8 @@ class ViewController: UIViewController {
         
         
         
-        redView.magnet(to: .top(self.view, .top) + 50,
-                           .left(self.view, .left) + 50,
+        redView.magnet(to: .safeArea(.top) + 100,
+                           .safeArea(.left) + 50,
                            .width(50),
                            .height(200))
         
@@ -53,7 +53,6 @@ class ViewController: UIViewController {
                              .height(100))
         
     }
-
-
 }
+
 
