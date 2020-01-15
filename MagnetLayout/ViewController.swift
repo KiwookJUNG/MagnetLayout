@@ -29,15 +29,22 @@ class ViewController: UIViewController {
          return view
     }()
     
+    var textLabel: UILabel = {
+        let lbl = UILabel()
+        lbl.text = "ddddddddddddddddd"
+        return lbl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(redView)
         self.view.addSubview(blueView)
         self.view.addSubview(greenView)
+        self.view.addSubview(textLabel)
         
         
         
-        redView.magnet(.safeArea(.top) + 100,
+        redView.magnet(.safeArea(.top),
                        .safeArea(.left) + 50,
                        .width(50),
                        .height(200))
@@ -51,6 +58,11 @@ class ViewController: UIViewController {
                          .left(to: redView, .left),
                          .width(150),
                          .height(100))
+        
+        textLabel.magnet(.top(to: greenView, .bottom) + 100,
+                         .safeArea(.right) + (-100))
+        
+    
         
     }
 }
