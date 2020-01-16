@@ -11,7 +11,7 @@ Magnet (오토 레이아웃)
 
 <br>
 
-### No Library, Just Copy Code
+### No Library, Just copy & paste code
 
 [Magnet.swift 링크](https://github.com/KiwookJUNG/MagnetLayout/blob/master/MagnetLayout/Magnet/UIView%20%2B%20Extension.swift)
 
