@@ -11,7 +11,7 @@ Magnet (오토 레이아웃)
 
 <br>
 
-### 설치법
+### No Library, Just Copy Code
 
 [Magnet.swift 링크](https://github.com/KiwookJUNG/MagnetLayout/blob/master/MagnetLayout/Magnet/UIView%20%2B%20Extension.swift)
 
