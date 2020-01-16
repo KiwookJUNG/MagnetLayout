@@ -53,7 +53,6 @@ extension UIView {
         static func + (lhs: Direction, rhs: CGFloat) -> Direction {
             
             switch lhs {
-                
                 case .safeArea(let direction, let offset):
                     return .safeArea(direction, Offset(constant: offset.constant + rhs, multiplier: 1.0) )
                     
@@ -68,6 +67,29 @@ extension UIView {
                     
                 case .bottom(let view, let direction, let offset):
                     return .bottom(to: view, direction, Offset(constant: offset.constant + rhs, multiplier: 1.0))
+                    
+                default:
+                    return lhs
+            }
+        }
+        
+        static func - (lhs: Direction, rhs: CGFloat) -> Direction {
+            
+            switch lhs {
+                case .safeArea(let direction, let offset):
+                    return .safeArea(direction, Offset(constant: offset.constant - rhs, multiplier: 1.0) )
+                    
+                case .top(let view, let direction, let offset):
+                    return .top(to: view, direction, Offset(constant: offset.constant - rhs, multiplier: 1.0))
+                    
+                case .left(let view, let direction, let offset):
+                    return .left(to: view, direction, Offset(constant: offset.constant - rhs, multiplier: 1.0))
+                    
+                case .right(let view, let direction, let offset):
+                    return .right(to: view, direction, Offset(constant: offset.constant - rhs, multiplier: 1.0))
+                    
+                case .bottom(let view, let direction, let offset):
+                    return .bottom(to: view, direction, Offset(constant: offset.constant - rhs, multiplier: 1.0))
                     
                 default:
                     return lhs
@@ -93,7 +115,6 @@ extension UIView {
                       
                   case .bottom(let view, let direction, let offset):
                       return .bottom(to: view, direction, Offset(constant: offset.constant, multiplier: offset.multiplier * rhs))
-                      
                   default:
                       return lhs
               }
