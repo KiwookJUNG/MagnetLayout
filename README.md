@@ -11,6 +11,18 @@ Magnet (오토 레이아웃)
 
 <br>
 
+### 설치법
+
+[Magnet.swift 링크](https://github.com/KiwookJUNG/MagnetLayout/blob/master/MagnetLayout/Magnet/UIView%20%2B%20Extension.swift)
+
+- 1. 프로젝트에서 Magnet.swift 파일 생성
+
+- 2. 위의 링크에 접속해 소스코드 복사 및 붙여 넣기
+
+- 3. 메소드 사용(아래에 있는 사용법에 따라)
+
+<br>
+
 ### 사용법
 
 #### 1. 뷰의 전체에 Magnet 사용
