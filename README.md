@@ -27,8 +27,10 @@ Magnet (오토 레이아웃)
 
 #### 1. 뷰의 전체에 Magnet 사용
 
+<br>
+<br>
 
-#### 1-1. 슈퍼 뷰 전체에 Magnet 사용
+#### 1 - 1. 슈퍼 뷰 전체에 Magnet 사용
 
 ```swift
        pinkView.magnet(.fillSuper())                               
@@ -43,7 +45,7 @@ Magnet (오토 레이아웃)
 <br>
 <br>
 
-#### 1-2. 슈퍼 뷰 전체에 Magnet 사용 (원하는 만큼 거리 추가)
+#### 1 - 2. 슈퍼 뷰 전체에 Magnet 사용 (원하는 만큼 거리 추가)
 
 ```swift
         pinkView.magnet(.fillSuper(.init(top: 30,
@@ -67,7 +69,7 @@ Magnet (오토 레이아웃)
 <br>
 <br>
 
-#### 1-3. SafeArea 전체에 Magnet 사용
+#### 1 - 3. SafeArea 전체에 Magnet 사용
 
 ```swift
        pinkView.magnet(.safeArea(.top),
@@ -85,3 +87,11 @@ Magnet (오토 레이아웃)
 
 <br>
 <br>
+
+
+#### 2. 슈퍼뷰와 서브뷰 사이에 Magnet 사용 
+
+<br>
+<br>
+
+#### 2 - 1. 
